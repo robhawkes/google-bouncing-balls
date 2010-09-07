@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	color: #ccc;
+	font-family: Helvetica Neue, Verdana, sans-serif;
+	font-size: 20px;
+}
+
+p {
+	line-height: 1.5em;
+	list-style: none;
+}
+p a, p a:visited {
+	color: #56bff6;
+	text-decoration: none;
+}
+
+	p a:hover {
+		border-bottom: 1px solid #56bff6;
+	}
+
+canvas, section {
+	display: block;
+}
+
+#c {
+	position: absolute;
+}
+
+#attribution {
+	bottom: 40px;
+	position: absolute;
+	right: 40px;
+}
