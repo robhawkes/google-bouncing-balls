@@ -30,6 +30,15 @@ $(function() {
 	
 	function initEventListeners() {
 		$(window).bind('resize', updateCanvasDimensions).bind('mousemove', onMove);
+		
+		canvas.get(0).ontouchmove = function(e) {
+			e.preventDefault();
+			onTouchMove(e);
+		};
+		
+		canvas.get(0).ontouchstart = function(e) {
+			e.preventDefault();
+		};
 	};
 	
 	function updateCanvasDimensions() {
@@ -43,6 +52,11 @@ $(function() {
 	function onMove(e) {
 		if (pointCollection)
 			pointCollection.mousePos.set(e.pageX, e.pageY);
+	};
+	
+	function onTouchMove(e) {
+		if (pointCollection)
+			pointCollection.mousePos.set(e.targetTouches[0].pageX, e.targetTouches[0].pageY);
 	};
 	
 	function timeout() {
