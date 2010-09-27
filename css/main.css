@@ -34,8 +34,46 @@ canvas, section {
 	position: absolute;
 }
 
+#logo {
+	bottom: 30px;
+	height: 50px;
+	left: 40px;
+	position: absolute;
+	text-indent: -9999em;
+	width: 42px;
+}
+	
+	#logo a.rocket {
+		background: url('../img/rawkes_rocket.gif') no-repeat top left;
+		display: block;
+		height: 50px;
+		width: 42px;
+	}
+	
+	#logo a.rocket:hover {
+		background-position: top right;
+		border-bottom: none !important;
+	}
+
 #attribution {
 	bottom: 40px;
 	position: absolute;
 	right: 40px;
 }
+
+	#attribution iframe {
+		margin-bottom: -3px;
+	}
+	
+	#attribution .fb-button {
+		margin-bottom: -5px;
+	}
+	
+	#attribution .db-wrapper {
+		margin-top: -1px;
+	}
+	
+	#attribution .twitter-share-button {
+		margin-bottom: -4px;
+		margin-right: -8px;
+	}
