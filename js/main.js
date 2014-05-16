@@ -134,8 +134,8 @@ $(function() {
 				var d = Math.sqrt(dd);
 				
 				if (d < 150) {
-					point.targetPos.x = (this.mousePos.x < point.curPos.x) ? point.curPos.x - dx : point.curPos.x - dx;
-					point.targetPos.y = (this.mousePos.y < point.curPos.y) ? point.curPos.y - dy : point.curPos.y - dy;
+					point.targetPos.x = point.curPos.x - dx;
+					point.targetPos.y = point.curPos.y - dy;
 				} else {
 					point.targetPos.x = point.originalPos.x;
 					point.targetPos.y = point.originalPos.y;
